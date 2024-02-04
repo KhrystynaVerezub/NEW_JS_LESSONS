@@ -1,0 +1,21 @@
+body {
+    background-color: #dfdede;
+}
+
+/* Класс для списка ul */
+.product-list {
+    list-style-type: none;
+    padding: 15px;
+    margin: 10px;
+    max-width: 25%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* Класс для конечной суммы li*/
+.product-item{
+    background-color: rgb(165, 235, 235);
+    padding: 14px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
