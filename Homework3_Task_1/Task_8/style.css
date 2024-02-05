@@ -1,21 +1,84 @@
-body {
-    background-color: #dfdede;
-}
+*{
+    box-sizing: border-box;
+  }
 
-/* Класс для списка ul */
-.product-list {
-    list-style-type: none;
-    padding: 15px;
-    margin: 10px;
-    max-width: 25%;
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(239, 239, 239);
+  }
+
+  /* Класс для заголовка h1 */
+  .main-title{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .container {
     margin: 0 auto;
-    background-color: white;
-}
-
-/* Класс для конечной суммы li*/
-.product-item{
-    background-color: rgb(165, 235, 235);
-    padding: 14px;
-    margin-bottom: 10px;
+    padding: 40px 15px;
+    max-width: 1200px;
+  }
+  
+  /* Класс для списка ul */
+  .product-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-bottom: 30px;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  /* Класс для одного продукта li*/
+  .product-item{
+    background-color: rgb(207, 233, 233);
+    padding: 5px;
+    margin-bottom: 5px;
     border-radius: 5px;
+  }
+  
+  .product{
+    max-width: 370px;
+    background-color: white;
+    padding: 25px;
+    position: relative;
+  }
+
+  .product__number{
+    font-weight: bold;
+    color: rgb(159, 159, 159);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: small;
+  }
+  .product__title{
+    margin-top: 0;
+    font-size: 25px;
+  }
+
+  .product__desc{
+    font-size: 15px;
+    color: rgb(95, 95, 95);
+  }
+
+  .product__price{
+    font-size: 16px;
+  }
+
+  .price-block{
+    background-color: rgb(153, 226, 255);
+    padding: 25px;
+  }
+
+  .price-block__delivery-price{
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .price-block__total-price{
+    font-size: 21px;
   }
