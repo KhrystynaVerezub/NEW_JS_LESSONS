@@ -8,10 +8,10 @@ let product1 = "iPhone 14" // Название товара
 let productDesc1 = "Базовая модель флагманской линейки смартфонов Apple 2023-го года." // Описание товара
 let productPrice1 = 9000 // Стоимость товара
 
-document.write(`<li class = "product">
-<strong>${product1}</strong> ${index}
-<p>${productDesc1}</p>
-<strong>${productPrice1} руб</strong>
+document.write(`<li class = "container product-list product">
+<strong class="product__title">${product1}</strong> <p class="product__number"> ${index} </p>
+<p class="product__desc">${productDesc1}</p>
+<strong class="product__price">${productPrice1} руб</strong>
 </li>`)
 
 
@@ -21,10 +21,10 @@ let productDesc2 = "Защитный чехол для iPhone 14 - выполн�
 let productPrice2 = 700 // Стоимость товара
 
 index = index+1
-document.write(`<li class = "product">
-<strong>${product2}</strong>  ${index}
-<p>${productDesc2}</p>
-<strong>${productPrice2} руб</strong>
+document.write(`<li class = "container product-list product">
+<strong class="product__title">${product2}</strong> <p class="product__number"> ${index} </p>
+<p class="product__desc">${productDesc2}</p>
+<strong class="product__price">${productPrice2} руб</strong>
 </li>`)
 
 
@@ -34,15 +34,15 @@ let productDesc3 = "Прочное стекло защищает экран см
 let productPrice3 = 1200 // Стоимость товара
 
 index = index+1
-document.write(`<li class = "product">
-<strong>${product3}</strong>  ${index}
-<p>${productDesc3}</p>
-<strong>${productPrice3} руб</strong>
+document.write(`<li class = "container product-list product">
+<strong class="product__title">${product3}</strong> <p class="product__number"> ${index} </p>
+<p class="product__desc">${productDesc3}</p>
+<strong class="product__price">${productPrice3} руб</strong>
 </li>`)
 
 // Стоимость доставки
 let deliveryPrice = 400 //
 
-document.write(`<p class="product-item">
-                <p>Стоимость доставки: ${deliveryPrice} руб<p/>
-                <strong>Стоимость доставки: ${deliveryPrice} руб</strong></p>`)
+document.write(`<li class="container product-list price-block">
+                <p class="price-block__delivery-price">Стоимость доставки: ${deliveryPrice} руб<p/>
+                <strong class="price-block__total-price">Стоимость доставки: ${deliveryPrice} руб</strong></p>`)
