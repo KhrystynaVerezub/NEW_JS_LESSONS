@@ -11,49 +11,22 @@ function getPercentDiscount(price, percent = 0) {
 
 // Функция, возвращающая <strong> с текстом
 function getStrong(text) {
-  return result = `<strong>${text}</strong>`
+  return `<strong>${text}</strong>`
 }
 
 // Функция, создающая <p> с текстом
-function printParagraph(product, price, discount) {
-  document.write(`<p>${product}
-                      ${price}
-                      ${discount}
-                 </p>`)
+function printParagraph(text) {
+  document.write(`<p>${text}</p>`)
 }
 
-
-
-// Товар 1
-{
-  let product = "Футболка" // Название
-  let price = 800 // Стоимость
-  let discount = 15
-
-  let finalPrice = getPercentDiscount(price, discount) // Стоимость со скидкой
-
-  printParagraph(`'', стоимость: ${price} руб - ${discount}% = ${getStrong(finalPrice)} руб`)
+//функция создающая один товар
+function oneProduct(product, price, discount){
+  printParagraph(`${product}, стоимость: ${price} руб - ${discount}% = ${getStrong(getPercentDiscount(price, discount))} руб`)
 }
 
-// Товар 2
-{
-  let product = "Носки" // Название
-  let price = 200 // Стоимость
-  let discount = 10
+oneProduct('Футболка', 800, 15)
+oneProduct('Носки', 200, 10)
+oneProduct('Штаны', 1000, 5)
 
-  let finalPrice = getPercentDiscount(price, discount) // Стоимость со скидкой
 
-  printParagraph(`${product}, стоимость: ${price} руб - ${discount}% = ${getStrong(finalPrice)} руб`)
-}
-
-// Товар 3
-{
-  let product = "Штаны" // Название
-  let price = 1000 // Стоимость
-  let discount = 5
-
-  let finalPrice = getPercentDiscount(price, discount) // Стоимость со скидкой
-
-  printParagraph(`${product}, стоимость: ${price} руб - ${discount}% = ${getStrong(finalPrice)} руб`)
-}
 
