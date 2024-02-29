@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(166, 166, 212);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Главный заголовок */
+.title-h1{
+    color: brown;
+    margin-top: 50;
+    margin-bottom: 20px;
+}
+
+/* Главный заголовок */
+.description-p{
+    color: rgb(49, 2, 2);
+    margin-top: 50;
+    margin-bottom: 20px;
+}
+
+.t-input{
+    max-width: 300px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .button{
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
